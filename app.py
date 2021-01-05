@@ -3,7 +3,6 @@ import joblib
 import numpy as np
 import sklearn
 import pickle
-import pandas as pd
 
 filename="gradient.pkl"
 model=joblib.load(open(filename,'rb'))
