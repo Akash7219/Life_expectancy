@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life Expectancy</title>
+</head>
+<body>
+	<h3>Life Expectancy</h3>
+	<div>
+		<form action="/predict" method="POST">
+			<label for="adult_mortality">Adult Mortality</label>
+			<input type="text" name="adult_mortality">
+			<br>
+			<label for="alcohol">Alcohol</label>
+			<input type="text" name="alcohol">
+			<br>
+			<label for="percentage_expenditure">Percentage Expenditure</label>
+			<input type="text" name="percentage_expenditure">
+			<br>
+			<label for="hepatitisB">Hepatitis B</label>
+			<input type="text" name="hepatitisB">
+			<br>
+			<label for="measles">Measles</label>
+			<input type="text" name="measles">
+			<br>
+			<label for="bmi">BMI</label>
+			<input type="text" name="bmi">
+			<br>
+			<label for="under_five_deaths">Under-five Deaths</label>
+			<input type="text" name="under_five_deaths">
+			<br>
+			<label for="polio">Polio</label>
+			<input type="text" name="polio">
+			<br>
+			<label for="adult_mortality">Adult Mortality</label>
+			<input type="text" name="adult_mortality">
+			<br>
+			<label for="total_expenditure">Total Expenditure</label>
+			<input type="text" name="total_expenditure">
+			<br>
+			<label for="hiv_aids" value="None">HIV/AIDS</label>
+			<input type="text" name="hiv_aids">
+			<br>
+			<label for="gdp">GDP</label>
+			<input type="text" name="gdp">
+			<br>
+			<label for="thinness_10-19">Thinness 10-19</label>
+			<input type="text" name="thinness_10-19">
+			<br>
+			<label for="income_composition_of_resources">Income Composition of Resources</label>
+			<input type="text" name="income_composition_of_resources">
+			<br>
+			<label for="status">Status</label>
+			<select id="status" name="status">
+				<option>Developing</option>
+				<option>Developed</option>
+				
+			</select>
+			<br>
+			<input type="submit" name="Submit">
+			
+		</form>
+		<br><br><h3>{{ prediction_text}}<h3>
+	</div>
+
+</body>
+</html>
